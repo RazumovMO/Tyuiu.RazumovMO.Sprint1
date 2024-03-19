@@ -2,6 +2,7 @@
 using System;
 using Tyuiu.RazumovMO.Sprint1.Task0.V0.Lib;
 
+
 namespace Tyuiu.RazumovMO.Sprint1.Task0.V0.Test
 {
     [TestClass]
@@ -10,8 +11,10 @@ namespace Tyuiu.RazumovMO.Sprint1.Task0.V0.Test
         [TestMethod]
         public void ValidExprssion()
         {
-            DataService ds = new DataServiceTest();
-            var res = ds.Calc();
+            DataService ds = new DataService();
+            var res = ds.Calculate();
+            Assert.AreEqual(22, res);
+
         }
     }
 }
