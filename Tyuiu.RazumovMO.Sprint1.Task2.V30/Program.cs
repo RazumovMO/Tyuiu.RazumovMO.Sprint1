@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.RazumovMO.Sprint1.Task0.V0.Lib;
+using Tyuiu.RazumovMO.Sprint1.Task2.V30.Lib;
 
-namespace Tyuiu.RazumovMO.Sprint1.Task0.V0
+namespace Tyuiu.RazumovMO.Sprint1.Task2.V30
 {
     class Program
     {
@@ -13,14 +13,12 @@ namespace Tyuiu.RazumovMO.Sprint1.Task0.V0
         {
             DataService ds = new DataService();
 
-            
-
             Console.Title = "Спринт №0 | Выполнил: Разумов М. О. | ПКТб-23-2";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт №1                                                               *");
             Console.WriteLine("* Тема: Создание итогового решения по спринту                             *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #1                                                              *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #30                                                             *");
             Console.WriteLine("* Выполнил: Разумов Максим Олегович | ПКТб-23-2                           *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -31,12 +29,19 @@ namespace Tyuiu.RazumovMO.Sprint1.Task0.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*                                                                         *");
+            double x;
+            Console.WriteLine("Значение х: ");
+            x = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ: " + ds.ZeroCheck(x) +"                                                         *");
+            Console.WriteLine("* РЕЗУЛЬТАТ: " + ds.ConvertKmToMetre(x) + " м                                                      *");
             Console.WriteLine("***************************************************************************");
             Console.ReadLine();
-            Console.WriteLine(ds.Calculate());
+            Console.WriteLine(ds.ConvertKmToMetre(x));
             Console.ReadLine();
+
+
+
         }
     }
 }
