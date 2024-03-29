@@ -32,7 +32,7 @@ namespace Tyuiu.RazumovMO.Sprint1.Task0.V0
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ: " + ds.ZeroCheck(x) +"                                                         *");
+            Console.WriteLine("* РЕЗУЛЬТАТ: " + ds.Calculate() +"                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.ReadLine();
             Console.WriteLine(ds.Calculate());

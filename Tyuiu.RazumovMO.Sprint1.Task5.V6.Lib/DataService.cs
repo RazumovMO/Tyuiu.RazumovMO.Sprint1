@@ -9,98 +9,38 @@ namespace Tyuiu.RazumovMO.Sprint1.Task5.V6.Lib
 {
     public class DataService : ISprint1Task5V6
     {
+        
+        
         public int Calculate(int k)
         {
             int n = 0;
-
-            for (int i = 1; i <= 365; i += 7)
+            
+            int Week(int b)
             {
-                if (i == k)
+                for (int i = b; i <= 365; i += 7)
                 {
-                    n = 1;
-                    return n;
+                    if (i == k)
+                    {
+                        n = b;                     
+                    }
+                    else
+                        continue;
                 }
-
-                else
-                    continue;
+                return n;
             }
 
-            for (int i = 2; i <= 365; i += 7)
+            for (int d = 1; d <= 7; d += 1)
             {
-                if (i == k)
-                {
-                    n = 2;
-                    return n;
-                }
-
-                else
+                if (Week(d) == 0)
                     continue;
-            }
 
-            for (int i = 3; i <= 365; i += 7)
-            {
-                if (i == k)
-                {
-                    n = 3;
+                else if (Week(d) == d)
                     return n;
-                }
-
-                else
-                    continue;
-            }
-
-            for (int i = 4; i <= 365; i += 7)
-            {
-                if (i == k)
-                {
-                    n = 4;
-                    return n;
-                }
-
-                else
-                    continue;
-            }
-
-            for (int i = 5; i <= 365; i += 7)
-            {
-                if (i == k)
-                {
-                    n = 5;
-                    return n;
-                }
-
-                else
-                    continue;
-            }
-
-            for (int i = 6; i <= 365; i += 7)
-            {
-                if (i == k)
-                {
-                    n = 6;
-                    return n;
-                }
-
-                else
-                    continue;
-            }
-
-            for (int i = 7; i <= 365; i += 7)
-            {
-                if (i == k)
-                {
-                    n = 7;
-                    return n;
-                }
-
-                else
-                    continue;
             }
 
             return n;
             
-
-
         }
+
     }
 }

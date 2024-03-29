@@ -11,9 +11,9 @@ namespace Tyuiu.RazumovMO.Sprint1.Task5.V6.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int k = 305;
+            int k = 30;
             var res = ds.Calculate(k);
-            Assert.AreEqual(res , 5);
+            Assert.AreEqual(res , 2);
         }
     }
 }
